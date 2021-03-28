@@ -1,0 +1,17 @@
+// find a key
+
+public Link find (int key)
+{
+  Link current = first;
+  
+    while (current != null)
+    {
+        if (current.iData == key )
+            return current;
+            
+        else
+            current = current.next;
+    }
+    
+    return null;
+}
