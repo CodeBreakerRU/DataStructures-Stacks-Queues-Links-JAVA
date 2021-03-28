@@ -43,6 +43,20 @@ class LinkList{
 		first = newLink;					// first --> newLink
 	}
 	
+	public Link find(int id)			// Find a link
+			 
+	{
+		Link current = first;
+		while (current != null)
+		{
+			if (current.iData == id)
+				return current;		// Display Current link value
+			else
+				current = current.next;  
+				
+		}
+	}
+	
 	public Link deleteFirst() 				// delete first item
 	{										// (assumes list not empty)
 		Link temp = first;					// save reference to link
